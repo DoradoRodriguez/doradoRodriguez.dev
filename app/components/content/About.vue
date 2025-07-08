@@ -33,6 +33,7 @@ const stack = await queryCollection('stack').first()
         <AboutSignature class="black absolute -bottom-24 -right-2 w-32 sm:hidden" />
       </div>
     </div>
+    <!--
     <Divider class="my-8" />
     <slot
       name="experiences"
@@ -77,5 +78,6 @@ const stack = await queryCollection('stack').first()
         </SpotlightCard>
       </div>
     </div>
+    -->
   </section>
 </template>

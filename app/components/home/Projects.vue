@@ -6,14 +6,14 @@ const localePath = useLocalePath()
 
 const { data: projects } = await useAsyncData('projects', async () => {
   const collection = ('projects_' + locale.value) as keyof Collections
-  return await queryCollection(collection).all() as Collections['projects_en'][] | Collections['projects_fr'][]
+  return await queryCollection(collection).all() as Collections['projects_en'][] | Collections['projects_fr'][] | Collections['projects_es'][]
 }, {
   watch: [locale],
 })
 </script>
-<!--
+
 <template>
-  <div class="flex w-full flex-col gap-6">
+<!--  <div class="flex w-full flex-col gap-6">
     <h3 class="font-newsreader italic text-white-shadow text-xl">
       {{ $t("navigation.works") }}
     </h3>
@@ -42,5 +42,5 @@ const { data: projects } = await useAsyncData('projects', async () => {
       </span>
     </NuxtLinkLocale>
   </div>
+Uncomment code to display the projects section -->
 </template>
--->

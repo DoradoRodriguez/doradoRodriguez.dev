@@ -64,7 +64,7 @@ const spotlightColorStops = [props.from, props.via, props.to].filter(value => !!
   >
     <slot />
   </component>
-  <BaseSpotlightCard
+  <Base
     v-else
     from="rgba(255,255,255,0.2)"
     class="relative rounded-lg"
@@ -84,5 +84,5 @@ const spotlightColorStops = [props.from, props.via, props.to].filter(value => !!
     <div class="relative flex h-full flex-col">
       <slot />
     </div>
-  </BaseSpotlightCard>
+  </Base>
 </template>
