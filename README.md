@@ -1,1 +1,0 @@
-A fork from [https://github.com/HugoRCD/canvas](https://github.com/HugoRCD/canvas)
